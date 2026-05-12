@@ -7,8 +7,8 @@ import java.util.Set;
 public class Dev
 {
     private String nome;
-    private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
-    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+    private final Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
+    private final Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
     public void inscreverBootcamp(Bootcamp bootcamp)
     {
@@ -44,19 +44,9 @@ public class Dev
         return conteudosInscritos;
     }
 
-    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos)
-    {
-        this.conteudosInscritos = conteudosInscritos;
-    }
-
     public Set<Conteudo> getConteudosConcluidos()
     {
         return conteudosConcluidos;
-    }
-
-    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos)
-    {
-        this.conteudosConcluidos = conteudosConcluidos;
     }
 
     @Override
